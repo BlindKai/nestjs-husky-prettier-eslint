@@ -1,6 +1,6 @@
 {
   "*.ts": [
-    "prettier --config .prettierrc --check \"src/**/*.ts\" \"test/**/*.ts\"",
-    "eslint \"{src,apps,libs,test}/**/*.ts\""
+    "npm run format",
+    "npm run lint"
   ]
 }
