@@ -1,6 +1,6 @@
 {
-  "*.ts": [
-    "npm run format",
-    "npm run lint"
+  "src/**/*.ts": [
+    "npm run format --",
+    "npm run lint --"
   ]
 }
