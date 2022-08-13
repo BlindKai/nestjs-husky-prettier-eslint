@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+green='\033[0;32m'
+blue='\033[0;34m'
+no_color='\033[0m'
+
+echo -e "\n${blue}Executing pre-commit hook${no_color}"
+
 npm run format && npm run lint
