@@ -6,4 +6,4 @@ no_color='\033[0m'
 
 echo -e "\n${green}Executing pre-push hook${no_color}"
 
-npm run format && npm run lint
+npm run test
