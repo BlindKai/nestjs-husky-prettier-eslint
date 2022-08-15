@@ -18,5 +18,6 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-console": 2,
     "prettier/prettier": 2
-  }
+  },
+  "reportUnusedDisableDirectives": true
 }
