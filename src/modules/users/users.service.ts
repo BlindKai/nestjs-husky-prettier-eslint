@@ -25,7 +25,6 @@ export class UsersService {
     return `This action removes a #${id} user`;
   }
 
-  // Fake user check
   check(id: number) {
     return Number.isInteger(id);
   }

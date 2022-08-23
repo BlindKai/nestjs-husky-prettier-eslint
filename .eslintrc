@@ -26,8 +26,6 @@
         "newlines-between": "always"
       }
     ]
-
-    //import/order: ["error", {"alphabetize": {"order": "asc", "caseInsensitive": true}}]
   },
   "reportUnusedDisableDirectives": true
 }
