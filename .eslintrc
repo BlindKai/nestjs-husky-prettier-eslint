@@ -25,6 +25,20 @@
         "groups": ["builtin", "external", "parent", "sibling", "index"],
         "newlines-between": "always"
       }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      { "selector": "variableLike", "format": ["camelCase"] },
+      {
+        "selector": "variable",
+        "types": ["boolean"],
+        "format": ["camelCase"],
+        "prefix": ["is", "should", "has", "can", "did", "will"]
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      }
     ]
   },
   "reportUnusedDisableDirectives": true
