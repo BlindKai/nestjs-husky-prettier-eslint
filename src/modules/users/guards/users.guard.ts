@@ -1,5 +1,6 @@
 import { BadRequestException, CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Request } from 'express';
+
 import { UsersService } from '../users.service';
 
 @Injectable()

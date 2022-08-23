@@ -1,5 +1,7 @@
-import { TestingModule, Test } from '@nestjs/testing';
+import { Test, TestingModule } from '@nestjs/testing';
+
 import { UsersService } from '../users.service';
+
 import { UsersGuard } from './users.guard';
 
 describe('UserGuard', () => {

@@ -3,8 +3,8 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint/eslint-plugin", "prettier"],
-  "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier", "import"],
+  "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "plugin:import/typescript"],
   "root": true,
   "env": {
     "node": true,
@@ -12,12 +12,19 @@
   },
   "ignorePatterns": [],
   "rules": {
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "off",
     "no-console": 2,
-    "prettier/prettier": 2
+    "prettier/prettier": 2,
+    "no-multi-spaces": 2,
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+      }
+    ],
+    "import/order": ["error", { "newlines-between": "always-and-inside-groups" }]
   },
   "reportUnusedDisableDirectives": true
 }
