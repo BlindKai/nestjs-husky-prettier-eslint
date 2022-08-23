@@ -23,7 +23,7 @@
           "caseInsensitive": true
         },
         "groups": ["builtin", "external", "parent", "sibling", "index"],
-        "newlines-between": "always-and-inside-groups"
+        "newlines-between": "always"
       }
     ]
 
