@@ -1,10 +1,10 @@
 import { Body, Controller, Delete, Get, Param, Patch, Post, UseFilters, UseGuards } from '@nestjs/common';
 
-import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UsersFilter } from './filters/users.filter';
 import { UsersGuard } from './guards/users.guard';
+import { UsersService } from './users.service';
 
 @UseFilters(UsersFilter)
 @Controller('users')

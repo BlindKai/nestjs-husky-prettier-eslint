@@ -15,16 +15,19 @@
     "no-console": 2,
     "prettier/prettier": 2,
     "no-multi-spaces": 2,
-    "sort-imports": [
+    "import/order": [
       "error",
       {
-        "ignoreCase": false,
-        "ignoreDeclarationSort": true,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
+        "newlines-between": "always-and-inside-groups"
       }
-    ],
-    "import/order": ["error", { "newlines-between": "always-and-inside-groups" }]
+    ]
+
+    //import/order: ["error", {"alphabetize": {"order": "asc", "caseInsensitive": true}}]
   },
   "reportUnusedDisableDirectives": true
 }
